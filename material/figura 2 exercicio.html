@@ -1,0 +1,27 @@
+ <!doctype html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="utf-8">
+            <title>Incorporando Javascript em Páginas HTML</title>
+        </head>
+        <body>
+            <button onclick="multiplique()">Add</button>
+            <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+        </body>
+        <script type="text/javascript">
+            
+            var resultadoMultiplicacao = multiplique(20, 50); 
+            var divLocal = document.getElementById('exibe_resultado'); 
+            divLocal.innerHTML += resultadoMultiplicacao;
+
+            function multiplique()
+                {
+                var resultado = 0;
+                resultado = numero1 * numero2;
+                return resultado;
+                }
+ </script>
+ </html>
+
+
+

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>teste do exercicio modulo 1</title>
+    </head>
+    <body>
+        <div id="exibe_resultado"> Resultado da divisao: </div>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <input type="text" id="myText">
+        <button onclick="divida()">Add</button>
+    </body>
+    <script type="text/javascript">
+
+        
+        var resultadodivisao = multiplique(20, 50);
+        var divLocal = document.getElementById('exibe_resultado');
+       
+        divLocal.innerHTML += resultadodivisao;
+        
+        function divida()
+        {
+            var a = document.getElementById('n1').value;
+            var b = document.getElementById('n2').value;
+            var resultado = 0;
+            resultado = a / b;
+            document.getElementById("myText").value = resultado;
+           
+        
+        }
+        
+    </script>
+</html>
+
+
+
